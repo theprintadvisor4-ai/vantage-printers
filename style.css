@@ -145,3 +145,55 @@ footer {
   font-size: 14px;
   color: #888;
 }
+/* --- Testimonials Slider Styles --- */
+.testimonial-slider {
+  position: relative;
+  max-width: 700px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.testimonial-slide {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.testimonial-slide.active {
+  display: block;
+}
+
+.testimonial-slide p {
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.testimonial-slide h4 {
+  color: #F97316;
+  margin-top: 0;
+}
+
+.prev-btn, .next-btn {
+  background: #F97316;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background: #ea580c;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
