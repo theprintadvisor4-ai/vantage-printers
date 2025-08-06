@@ -1,21 +1,14 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
+  background: #f5f5f5;
   color: #333;
 }
 
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px 0;
-}
-
 .hero {
-  background: white;  /* Pehle orange tha, ab white */
-  color: #F97316;      /* Orange text */
+  background: white;
+  color: #F97316;
   text-align: center;
   padding: 80px 20px;
 }
@@ -23,70 +16,100 @@ body {
 .hero h1 {
   font-size: 48px;
   margin-bottom: 10px;
-  text-shadow: 1px 1px 1px #eee;
 }
 
-
-.tagline {
+.hero p {
   font-size: 20px;
   margin-bottom: 30px;
 }
 
 .btn {
-  background: #F97316;   /* Orange background */
-  color: white;          /* White text */
+  background: #F97316;
+  color: white;
   padding: 12px 25px;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  transition: background 0.3s ease;
 }
 
-section {
+.btn:hover {
+  background: #d95d0b;
+}
+
+.portfolio {
   text-align: center;
-  padding: 60px 0;
+  padding: 60px 20px;
+  background: #fff;
 }
 
-h2 {
+.portfolio h2 {
+  margin-bottom: 30px;
   font-size: 32px;
-  margin-bottom: 20px;
+  color: #F97316;
 }
 
-.service-list {
+.gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-
-.service-box {
-  background: white;
-  border: 2px solid #F97316;
-  padding: 20px 30px;
-  border-radius: 10px;
-  font-weight: bold;
-  min-width: 200px;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 20px;
-  font-size: 40px;
+  justify-content: center;
 }
 
-.why-us ul {
-  list-style: none;
-  padding: 0;
-  line-height: 2;
+.gallery img {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
 }
 
-.contact p {
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.testimonials {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.testimonials h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #F97316;
+}
+
+.testimonial-slider {
+  position: relative;
+  height: 80px;
+  overflow: hidden;
+}
+
+.testimonial-slider .slide {
+  position: absolute;
+  width: 100%;
+  animation: slideShow 12s infinite;
+  opacity: 0;
   font-size: 18px;
 }
 
+.testimonial-slider .slide:nth-child(1) { animation-delay: 0s; }
+.testimonial-slider .slide:nth-child(2) { animation-delay: 4s; }
+.testimonial-slider .slide:nth-child(3) { animation-delay: 8s; }
+
+@keyframes slideShow {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
 footer {
-  background: #222;
-  color: white;
   text-align: center;
   padding: 20px;
+  background: #fff;
+  font-size: 14px;
+  color: #888;
 }
