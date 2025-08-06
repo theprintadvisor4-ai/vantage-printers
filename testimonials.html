@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testimonials – Vantage Printers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQs</a>
+    <a href="quote.html" class="quote-btn">Get a Quote</a>
+  </nav>
+
+  <!-- Testimonials Section -->
+  <section class="page-section">
+    <h1>What Our Clients Say</h1>
+
+    <div class="testimonial-slider">
+      <button class="prev-btn" onclick="moveSlide(-1)">←</button>
+
+      <div class="testimonial-slide active">
+        <p>"Vantage Printers helped us redesign our packaging – the quality was top-notch and delivery was on time!"</p>
+        <h4>– Golden Pearl Cosmetics</h4>
+      </div>
+
+      <div class="testimonial-slide">
+        <p>"Their design team created beautiful boxes for our bakery – the foiling and lamination looked premium!"</p>
+        <h4>– Sweet Treats Bakery</h4>
+      </div>
+
+      <div class="testimonial-slide">
+        <p>"We order textile sample boxes regularly and they never disappoint. Great customer support!"</p>
+        <h4>– Nizam Textiles</h4>
+      </div>
+
+      <button class="next-btn" onclick="moveSlide(1)">→</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Vantage Printers. All rights reserved.</p>
+  </footer>
+
+  <!-- Slider Script -->
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".testimonial-slide");
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove("active");
+        if (i === index) slide.classList.add("active");
+      });
+    }
+
+    function moveSlide(direction) {
+      currentSlide += direction;
+      if (currentSlide >= slides.length) currentSlide = 0;
+      if (currentSlide < 0) currentSlide = slides.length - 1;
+      showSlide(currentSlide);
+    }
+
+    // Auto show first slide
+    showSlide(currentSlide);
+  </script>
+
+</body>
+</html>
