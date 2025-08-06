@@ -2,74 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vantage Printers | Think Beyond</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vantage Printers – Think Beyond</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1>Vantage Printers</h1>
-      <p class="tagline">Think Beyond</p>
-      <a href="#contact" class="btn">Get a Quote</a>
-    </div>
-  </header>
 
-  <section class="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>We specialize in premium printing & packaging solutions using the latest technology and creative designs. Trusted by top brands in cosmetics, textile, and food industry.</p>
+  <!-- HERO SECTION -->
+  <section class="hero" data-aos="fade-up">
+    <h1>Vantage Printers</h1>
+    <p>Think Beyond</p>
+    <a href="#" class="btn" data-aos="zoom-in">Get a Quote</a>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section class="portfolio" data-aos="fade-up">
+    <h2>Our Work</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x200?text=Box+1" alt="Box 1">
+      <img src="https://via.placeholder.com/300x200?text=Box+2" alt="Box 2">
+      <img src="https://via.placeholder.com/300x200?text=Box+3" alt="Box 3">
     </div>
   </section>
 
-  <section class="services">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="service-list">
-        <div class="service-box">Rigid Boxes</div>
-        <div class="service-box">Offset Printing</div>
-        <div class="service-box">Custom Packaging</div>
-        <div class="service-box">Labels & Stickers</div>
-      </div>
+  <!-- TESTIMONIALS SLIDER -->
+  <section class="testimonials" data-aos="fade-up">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-slider">
+      <div class="slide">“Great quality and service!” – Golden Pearl</div>
+      <div class="slide">“Reliable packaging partner.” – Jhalak</div>
+      <div class="slide">“Best in town for cosmetic boxes.” – Goree</div>
     </div>
   </section>
 
-  <section class="gallery">
-    <div class="container">
-      <h2>Our Work</h2>
-      <div class="gallery-grid">
-        <div class="work-box">📦</div>
-        <div class="work-box">🖨️</div>
-        <div class="work-box">🎁</div>
-        <div class="work-box">🧴</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="why-us">
-    <div class="container">
-      <h2>Why Choose Vantage?</h2>
-      <ul>
-        <li>✅ Latest printing machines</li>
-        <li>✅ High-quality finishing</li>
-        <li>✅ Fast delivery</li>
-        <li>✅ Custom design support</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>📞 WhatsApp: 0305-9146551<br>📧 Email: info@vantageprinters.com</p>
-    </div>
-  </section>
-
+  <!-- FOOTER -->
   <footer>
-    <div class="container">
-      <p>© 2025 Vantage Printers. All rights reserved.</p>
-    </div>
+    <p>© 2025 Vantage Printers. All rights reserved.</p>
   </footer>
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
