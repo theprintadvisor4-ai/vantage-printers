@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQs – Vantage Printers</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .faq-section {
+      max-width: 800px;
+      margin: 40px auto;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .faq-question {
+      background-color: #F97316;
+      color: white;
+      padding: 15px 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .faq-answer {
+      background-color: #fff;
+      padding: 15px 20px;
+      display: none;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQs</a>
+    <a href="quote.html" class="quote-btn">Get a Quote</a>
+  </nav>
+
+  <section class="page-section faq-section">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+      <div class="faq-question">What types of packaging do you offer?</div>
+      <div class="faq-answer">We offer custom rigid boxes, mailer boxes, folding cartons, labels, and much more based on your business needs.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Can I get a custom quote for my product?</div>
+      <div class="faq-answer">Absolutely! Use our "Get a Quote" page to submit your details and we’ll get back to you promptly.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Do you ship internationally?</div>
+      <div class="faq-answer">Yes, we cater to both local and international clients, especially in USA, UK, and the Middle East.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What’s the turnaround time?</div>
+      <div class="faq-answer">It usually depends on the product, but typical production time ranges from 7–14 business days.</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Vantage Printers. All rights reserved.</p>
+  </footer>
+
+  <!-- FAQ Script -->
+  <script>
+    const questions = document.querySelectorAll('.faq-question');
+    questions.forEach(q => {
+      q.addEventListener('click', () => {
+        const answer = q.nextElementSibling;
+        answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+      });
+    });
+  </script>
+
+</body>
+</html>
