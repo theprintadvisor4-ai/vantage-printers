@@ -1,13 +1,56 @@
 .hero {
-  background: url('https://source.unsplash.com/1600x900/?printing,packaging') center/cover no-repeat;
-  height: 90vh;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background: linear-gradient(to right, #f4f4f4, #ffffff);
   text-align: center;
+  padding: 100px 20px;
+  border-bottom: 1px solid #ddd;
 }
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #111;
+  margin-bottom: 10px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #e65c00;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .section {
   padding: 60px 20px;
   text-align: center;
