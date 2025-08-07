@@ -2,45 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us – Vantage Printers</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Vantage Printers</title>
+  <link rel="stylesheet" href="style/style.css">
+  <style>
+    .about-header {
+      background: url('https://images.unsplash.com/photo-1581092795360-6e8f6ec34031?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+      background-size: cover;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .about-header h1 {
+      font-size: 3rem;
+      background-color: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .about-content {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+
+    .about-content h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .about-image {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      margin: 30px 0;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="contact.html">Contact</a>
-    <a href="faq.html">FAQs</a>
-    <a href="quote.html" class="quote-btn">Get a Quote</a>
-  </nav>
+  <div class="about-header">
+    <h1>Who We Are</h1>
+  </div>
 
-  <!-- About Section -->
-  <section class="page-section">
-    <h1>About Vantage Printers</h1>
-    <p>We are a leading printing and packaging company based in Pakistan, offering premium quality solutions for both local and international clients. From cosmetics to textiles and food packaging, our services are trusted by hundreds of brands.</p>
-    
-    <h2>Our Mission</h2>
-    <p>To deliver exceptional printing and packaging services that help businesses elevate their brand visibility, through innovation, reliability and outstanding customer support.</p>
-    
-    <h2>Why Choose Us?</h2>
-    <ul>
-      <li>Latest Offset & Digital Machines</li>
-      <li>Premium Quality Materials</li>
-      <li>Competitive Pricing</li>
-      <li>Dedicated Support Team</li>
-      <li>Timely Delivery Nationwide & International</li>
-    </ul>
+  <section class="about-content">
+    <h2>About Vantage Printers</h2>
+    <p>Vantage Printers is a leading name in offset, digital, and packaging printing solutions across Pakistan and abroad. With decades of experience and a fleet of cutting-edge machinery, we help brands bring their vision to life with quality, speed, and innovation.</p>
+
+    <img class="about-image" src="https://images.unsplash.com/photo-1581091870627-2dfc1849f99c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Printing in action" />
+
+    <p>We believe that print is not just ink on paper — it's a powerful tool for communication, branding, and business growth. Our expert team, strict quality controls, and state-of-the-art technology ensure perfection in every print job.</p>
+
+    <p>From luxury rigid boxes to high-volume packaging, we work with clients across industries including cosmetics, food, textiles, and exports. Whether you're a startup or an established brand, we help you look your best in print.</p>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Vantage Printers. All rights reserved.</p>
+  <footer style="background:#222; color:#fff; padding:20px 0; text-align:center;">
+    &copy; 2025 Vantage Printers. All rights reserved.
   </footer>
 
 </body>
