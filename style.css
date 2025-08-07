@@ -79,3 +79,31 @@
   margin: 40px auto;
   max-width: 400px;
 }
+<section class="hero">
+  <div class="hero-content">
+    <h1>About Us</h1>
+    <p>Leading the way in premium packaging and print solutions</p>
+    <a href="contact.html" class="cta-button">Get in Touch</a>
+  </div>
+</section>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Our Services</h1>
+    <p>From rigid boxes to offset printing, we deliver excellence</p>
+    <a href="contact.html" class="cta-button">Request a Quote</a>
+  </div>
+</section>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Portfolio</h1>
+    <p>See how brands shine with our custom printing & packaging</p>
+    <a href="contact.html" class="cta-button">Let's Collaborate</a>
+  </div>
+</section>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Contact Us</h1>
+    <p>We’re just a message away — let’s print your success story</p>
+    <a href="mailto:basit@vantageprinters.com" class="cta-button">Email Us</a>
+  </div>
+</section>
